@@ -1,0 +1,87 @@
+html, body {
+  height: 100%;
+  overflow: hidden;
+  --var-accent: blue;
+}
+
+* {
+  text-align: center;
+  font-family: sans-serif
+}
+
+#mainview {
+  width: 500px;
+  margin: 0 auto;
+}
+
+a, .link {
+  color: var(--var-accent);
+  text-decoration: none;
+}
+
+a:hover, .link:hover {
+  text-decoration: underline;
+}
+
+li {
+  text-align: left;
+}
+
+input[type="text"] {
+  width: 250px;
+  height: 25px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  border-bottom: solid 2px var(--var-accent);
+}
+
+input[type="text"]:focus {
+  background-color: #efefef;
+}
+
+input[type="checkbox"] {
+  margin-right: 15px;
+}
+
+#sessions {
+  margin-top: 2px;
+  margin-bottom: -10px;
+}
+
+#sessions > li:nth-of-type(1) {
+  display: none;
+}
+
+.rightalign {
+  float: right;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: black;
+    color: white;
+    --var-accent: dodgerblue;
+  }
+  
+  a {
+	  color: dodgerblue;
+  }
+  
+  a:visited {
+	  color: darkorchid;
+  }
+
+  input[type="checkbox"], button {
+    filter: invert(100%) hue-rotate(180deg);
+  }
+
+  input[type="text"] {
+    background-color: black;
+    color: white;
+  }
+
+  input[type="text"]:focus {
+    background-color: #111111;
+  }
+}

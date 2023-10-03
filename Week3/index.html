@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>TODO</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
+    <link rel="stylesheet" href="todo.css">
+  </head>
+  <body>
+    <h1>TODO</h1>
+    <div id="mainview">
+      <input type="text" id="input" placeholder="Enter a task" onkeypress="addSession(event)">  <span class="addbtn link" onclick="addSession()">+</span>
+      <ul id="sessions">
+        <li><span class="name">Dummy</span> <span class="rightalign"><span class="link" onclick="editSession(this)">Edit</span> <span class="link" onclick="deleteSession(this)">Del</span> <input class="checkbox" type="checkbox" name="group" onclick="selectSession(this)"></span></li>
+      </ul>
+      <h4>Done</h4>
+      <ul id="donesessions"></ul>
+      <p class="link" onclick="reset()">Reset</p>
+    </div>
+    <script src="todo.js"></script>
+  </body>
+</html>
