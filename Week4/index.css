@@ -1,0 +1,53 @@
+body {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+
+}
+
+#container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+input {
+    background-color: black;
+    color: white;
+    color: white;
+    font-size: 60px;
+    border: none;
+    margin-bottom: 4px;
+    text-align: right;
+    margin-right: 6px;
+    width: 350px;
+}
+
+button {
+    font-size: 30px;
+    background-color: #333333;
+    color: white;
+    margin: 8px 4px;
+    border-radius: 100%;
+    border: none;
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+}
+
+.long {
+    width: 174px;
+    border-radius: 40px;
+    text-align: left;
+    padding-left: 32px;
+}
+
+.orange {
+    background-color: #ff9f0a;
+}
+
+.lightgray {
+    background-color: #a5a5a5;
+    color: black;
+}
